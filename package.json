@@ -1,6 +1,6 @@
 {
   "name": "time_diff_human_readable",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert database time/js timestamp and calculate difference between both times and output in human readable format. e.g 2 mins ago",
   "main": "index.js",
   "scripts": {

@@ -38,13 +38,3 @@ function humanTimeDiff(d1, d2) {
 }
 
 export {humanTimeDiff}
-//humanTimeDiff(new Date(2022, 0, 1), new Date(2021, 0, 1));
-// // 1 year ago
-//humanTimeDiff(new Date(2022, 0, 1), new Date(2010, 0, 1));
-// // 12 years ago
-//humanTimeDiff(new Date(2022, 2, 20), new Date(2022, 0, 1));
-// // 2 months ago
-//humanTimeDiff("2023-01-17T13:23:19.293Z" , "2023-01-17T15:57:26.242Z");
-//2 hours ago
-// humanTimeDiff("2023-01-17T13:23:19.293Z");
-//variable always uses date.now to compare
