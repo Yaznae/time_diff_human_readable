@@ -1,0 +1,37 @@
+{
+  "name": "time_diff_human_readable",
+  "version": "1.0.1",
+  "description": "Convert database time/js timestamp and calculate difference between both times and output in human readable format. e.g 2 mins ago",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Time_diff_human_readable"
+  },
+  "keywords": [
+    "time",
+    "difference",
+    "time",
+    "difference",
+    "timestamp",
+    "convert",
+    "time",
+    "time",
+    "convert",
+    "human",
+    "readable",
+    "time",
+    "difference",
+    "isostring",
+    "human",
+    "readable",
+    "datetime",
+    "difference",
+    "datetime",
+    "difference"
+  ],
+  "author": "Emperorx3m",
+  "license": "MIT"
+}
