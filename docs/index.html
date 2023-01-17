@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://Emperorx3m.github.io/Time_Diff_human_readable/blob/index.js" type='module'></script> -->
+  <!-- <script src="../index.js" type="module"></script> -->
+
+  <title>HRTD</title>
+</head>
+<body>
+    <form  class="flex items-center justify-center h-screen flex-col">
+         <h3>ENTER VALID PAST DATE / DATETIME IN ANY FORMAT AND CLICK DIFF TO VIEW DIFFRENCE FROM NOW</h3>
+        <div class="flex items-center border-b border-teal-500 py-2 w-full sm:w-1/4">
+           
+          <input class="appearance-none bg-transparent border-1 w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="2023-01-17T13:23:19.293Z" aria-label="Full name" id="diff">
+          <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button" id="diffbtn">
+            DIFF
+          </button>
+         
+        </div>
+        <div id="diffres" class="font-bold text-lg"></div>
+      </form>
+
+      <script type="module">
+        import {humanTimeDiff} from "../index.js"
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('diffbtn').addEventListener('click', e => {
+                const dateval = document.getElementById('diff');
+                if (dateval) {
+                    var response = humanTimeDiff(dateval.value);
+                    document.getElementById('diffres').innerHTML = response
+                    console.log('resp ', response);
+                }
+            })
+        })
+      </script>
+</body>
+</html>
