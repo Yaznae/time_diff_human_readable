@@ -37,4 +37,4 @@ function humanTimeDiff(d1, d2) {
     return diffResponse(...timeDiff(d1, d2))
 }
 
-export {humanTimeDiff}
+module.exports = {humanTimeDiff}
